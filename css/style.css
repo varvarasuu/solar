@@ -512,3 +512,66 @@ main {
     font-size: 18px;
     line-height: 25px;
 }
+.footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 156px;
+} 
+.politics {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+.footer_logo {
+    width: 182px;
+    height: 51px;
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.socials_insta {
+    background-image: url('../images/ista.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 30px;
+    height: 30px;
+}
+.socials_telegram {
+    background-image: url('../images/telegrem.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 30px;
+    height: 30px;
+}
+.socials_whatsapp {
+    background-image: url('../images/whatsapp.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 30px;
+    height: 30px;
+}
+.socials_facebook {
+    background-image: url('../images/facebook.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 30px;
+    height: 30px;
+}
