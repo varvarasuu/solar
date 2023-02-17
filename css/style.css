@@ -1,71 +1,7 @@
-/* .header {
-    background-image: url('../images/header.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-.header_logo {
-    background-image: url('../images/logo.svg');
-    width: 182px;
-    height: 51px;
-    position: absolute;
-    top: 70px;
-    left: calc(50% - 91px);
-    background-repeat: no-repeat;
-}
-.header_p, .header_title, .header_revenue, .header_link_text {
-    font-family: 'Noto Sans', sans-serif;
-    text-align: center;
-    color: #fff;
-}
-.header_p {
-    padding: 261px 0 0 0;
-    font-size: 30px;
-    line-height: 50px;
-    font-weight: 400;
-}
-.header_title {
-    font-weight: 700;
-    font-size: 120px;
-    line-height: 160px;
-    font-variant: small-caps;
-}
-.header_revenue {
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 87px;
-    padding: 0 0 50px 0;
-}
-.header_link {
-    position: relative;
-}
-.header_link_picture {
-    background-image: url('../images/link.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 0 35%;
-    cursor: pointer;
-}
-.header_link_text
-{   position: absolute;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 50px;
-    left:37%;
-    top: 60px;
-    user-select: none;
-} */
-
-
+/* -------------- HEADER -------------- */
 .header_hero{
     height: 100vh;
+    width: 100%;
     background-image: url('../images/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -136,9 +72,27 @@
     text-transform: uppercase;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- MAIN -------------- */
+
 main {
     font-family: 'Noto Sans', sans-serif;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .servises{
@@ -178,6 +132,9 @@ main {
     line-height: 19px;
     color: #303030;
     padding-bottom: 50px;
+}
+.servises_text__paragraph {
+    width: 510px;
 }
 .servises_picture {
     background-image: url('../images/servises_picture.jpg');
@@ -279,8 +236,8 @@ main {
 }
 .green-tarif_discription__list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 40px;
 }
 .discription__text {
@@ -304,6 +261,7 @@ main {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
+    width: 600px;
 }
 .statement {
     background-image: url('../images/statement.jpg');
@@ -329,7 +287,7 @@ main {
 }
 .clients {
     width: 1200px;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 150px 0;
 }
 .clients_header {
@@ -394,7 +352,7 @@ main {
 
 .steps {
     width: 1200px;
-    margin: 0 auto 150px auto;
+    margin: 0 auto;
 }
 
 .steps_content {
@@ -411,17 +369,32 @@ main {
 
     color: #868585;
 }
-.steps_number {
+
+.steps_list li{
+    counter-increment: step-counter;
+    /* list-style: lower-greek; */
+}
+
+.steps_list li::before{
+    content: '0' counter(step-counter);
+    font-family: 'Noto Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-
     color: #868585;
+}
 
-    padding-bottom: 11px;
+/* .steps_list li::marker{
+    color: orange;
+} */
+
+.steps_list li + li{
+    margin-top: 30px;
 }
 
 .steps_title {
+    margin-top: 10px;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -431,7 +404,7 @@ main {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    padding-bottom: 30px;
+    width: 510px;
 }
 .steps_picture {
     background-image: url('../images/steps.jpg');
@@ -441,13 +414,32 @@ main {
 
     width: 600px;
     height: 730px;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- Footer -------------- */
+
 .footer {
+    margin-top: 150px;
     height: 730px;
-    background-image: url('../images/footer.jpg');
+    width: 100%;
+    /* background-image: url('../images/footer.jpg');
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: #000000;
     background-size: cover;
 
     color: white;
@@ -480,6 +472,7 @@ main {
 #name, #phone {
     background-color: transparent;
     
+    outline: none;
     border: none;
     border-bottom: 2px solid white;
     padding-bottom: 11px;
@@ -492,6 +485,16 @@ main {
 
     color: white;
 }
+
+#name::placeholder, #phone::placeholder{
+    color: white;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px #000000 inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
 .application_link {
     display: block;
     width: fit-content;
@@ -552,7 +555,7 @@ main {
     background-image: url('../images/telegrem.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     width: 30px;
     height: 30px;
@@ -574,4 +577,141 @@ main {
 
     width: 30px;
     height: 30px;
+}
+
+
+
+/* Адаптив под телефоны*/ 
+@media screen and (max-width: 430px) and (orientation: portrait) {
+
+    /*-------------HEADER-----------*/
+    .hero_content {
+        width: 400px;
+    }
+    .header_description {
+        font-size: 18px;
+        line-height: 25px;
+    
+    }
+    
+    .header_title {
+        font-size: 34px;
+        line-height: 43px;
+        font-variant: small-caps;
+    }
+    
+    .header_title span {
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+
+    /*-------------MAIN-----------*/
+    .servises {
+        padding: 60px 0;
+        width: 400px;
+    }
+    .servises_content{
+        flex-direction: column;
+        height: calc(600px * 2); 
+        gap: 40px;
+    }
+    .servises_text__paragraph {
+        width: 390px;
+    }
+    .servises_picture {
+        width: 390px;
+    }
+    .green-tarif {
+        padding: 0 0 60px 0;
+        height: 1450px;
+        width: 400px;
+    }
+    .green-tarif_content {
+        flex-direction: column;
+    }
+    .green-tarif_title {
+        padding-bottom: 40px;
+    }
+    .green-tarif_list {
+        padding-bottom: 50px;
+    }
+    .discription__right_text_top {
+        padding-bottom: 40px;
+    }
+    .green-tarif_right_header {
+        width: 390px;
+    }
+    .green-tarif_right_picture {
+        width: 390px;
+        height: 340px;
+    }
+    .statement {
+        height: 400px ;
+    }
+    .statement_text {
+        /* padding-top: 30px; */
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .clients {
+        width: 400px;
+        padding: 50px 0;
+    }
+    .clients_content {
+        flex-direction: column;
+    }
+    .clients_picture {
+        width: 390px;
+    }
+    .clients_arrow-left {
+        margin-left: 140px;
+    }
+    .clients_right_link {
+        margin-top: 60px;
+    }
+    .steps {
+        width: 400px;
+    }
+    .steps_content {
+        flex-direction: column;
+    }
+    .steps_text {
+        width: 390px;
+    }
+    .steps_picture {
+        width: 390px;
+        height: 475px;
+    }
+
+
+
+    /*-------------FOOTER------------*/
+    .footer {
+        margin-top: 60px;
+        height: 1260px;
+        width: 430px;
+    }
+    .footer_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        
+        width: 400px;
+    }
+    #name, #phone {
+        width: 390px;
+    }
+    .footer_bottom {
+        flex-direction: column;
+        gap: 30px;
+
+        align-items: flex-start;
+
+        width: 400px;
+        padding-top: 60px;
+
+    }
 }
