@@ -579,12 +579,116 @@ input:-webkit-autofill{
     height: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+ 
+    
 
+    /*--------------HEADER-----------*/
+    .header_hero {
+        height: 430px;
+    }
+    .hero_content{
+        margin-top: 60px;
+    }
+    .header_description {
+        font-size: 28px;
+        line-height: 35px;
+    
+    }
+    .header_title {
+        font-size: 44px;
+        line-height: 53px;
+        font-variant: small-caps;
+    }
+    .header_title span {
+        font-size: 34px;
+        line-height: 43px;
+    }
+    .header_hero-link {
+        margin-top: 60px;
+    }
+    
+    /*---------MAIN-----------*/
+    .servises {
+        width: 910px;
+        padding-top: 30px;
+    }
+    .services_content {
+        gap: 20px;
+    }
+    .servises_text__paragraph {
+        width: 430px;
+    }
+    .servises_picture {
+        width: 460px;
+    }
+
+    .green-tarif {
+        padding: 0 0 60px 0;
+        height: 900px;
+        width: 910px;
+    }
+    .green-tarif_content {
+        gap: 20px;
+    }
+    .green-tarif_right_header {
+        width: 440px;
+    }
+    .green-tarif_right_picture{
+        width: 440px; 
+    }
+    .clients {
+        width: 910px;
+        padding: 30px 0;
+    }
+    .clients_content {
+        gap: 20px;
+    }
+    .clients_picture {
+        width: 440px;
+    }
+    .clients_right_link {
+        margin-top: 60px;
+    }
+    .steps {
+        width: 910px;
+    }
+    .steps_content {
+        flex-direction: column;
+    }
+
+    /*---------FOOTER----------*/
+    .footer {
+        margin-top: 60px;
+        height: 1260px;
+        width: 100%;
+    }
+    .footer_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        
+        width: 930px;
+    }
+    #name, #phone {
+        width: 440px;
+    }
+    .footer_bottom {
+        width: 910px;
+    }
+    .contacts_text {
+        width: 440px;
+    }
+}
 
 /* Адаптив под телефоны*/ 
 @media screen and (max-width: 430px) and (orientation: portrait) {
 
     /*-------------HEADER-----------*/
+    .header_hero {
+        height: 100vh;
+    }
     .hero_content {
         width: 400px;
     }
@@ -609,7 +713,7 @@ input:-webkit-autofill{
     /*-------------MAIN-----------*/
     .servises {
         padding: 60px 0;
-        width: 400px;
+        width: 320px;
     }
     .servises_content{
         flex-direction: column;
@@ -617,15 +721,15 @@ input:-webkit-autofill{
         gap: 40px;
     }
     .servises_text__paragraph {
-        width: 390px;
+        width: 310px;
     }
     .servises_picture {
-        width: 390px;
+        width: 310px;
     }
     .green-tarif {
         padding: 0 0 60px 0;
-        height: 1450px;
-        width: 400px;
+        height: 1800px;
+        width: 320px;
     }
     .green-tarif_content {
         flex-direction: column;
@@ -635,15 +739,21 @@ input:-webkit-autofill{
     }
     .green-tarif_list {
         padding-bottom: 50px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .green-tarif_price {
+        flex-direction: column;
     }
     .discription__right_text_top {
         padding-bottom: 40px;
     }
     .green-tarif_right_header {
-        width: 390px;
+        width: 310px;
     }
     .green-tarif_right_picture {
-        width: 390px;
+        width: 310px;
         height: 340px;
     }
     .statement {
@@ -656,32 +766,33 @@ input:-webkit-autofill{
     }
 
     .clients {
-        width: 400px;
+        width: 320px;
         padding: 50px 0;
     }
     .clients_content {
         flex-direction: column;
     }
     .clients_picture {
-        width: 390px;
+        width: 310px;
     }
     .clients_arrow-left {
-        margin-left: 140px;
+        margin-left: 60px;
     }
     .clients_right_link {
         margin-top: 60px;
+        width: 180px;
     }
     .steps {
-        width: 400px;
+        width: 320px;
     }
     .steps_content {
         flex-direction: column;
     }
     .steps_text {
-        width: 390px;
+        width: 310px;
     }
     .steps_picture {
-        width: 390px;
+        width: 310px;
         height: 475px;
     }
 
@@ -691,24 +802,27 @@ input:-webkit-autofill{
     .footer {
         margin-top: 60px;
         height: 1260px;
-        width: 430px;
+        width: 100%;
     }
     .footer_content {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: flex-start;
         gap: 40px;
         
-        width: 400px;
+        width: 320px;
     }
     #name, #phone {
-        width: 390px;
+        width: 310px;
+    }
+    .contacts_text {
+        width: 310px;
     }
     .footer_bottom {
         flex-direction: column;
         gap: 30px;
 
-        align-items: flex-start;
+        align-items: center;
 
         width: 400px;
         padding-top: 60px;
@@ -798,7 +912,7 @@ input:-webkit-autofill{
     .footer {
         margin-top: 60px;
         height: 1260px;
-        width: 930px;
+        width: 100%;
     }
     .footer_content {
         flex-direction: column;
@@ -814,4 +928,9 @@ input:-webkit-autofill{
     .footer_bottom {
         width: 910px;
     }
+    .contacts_text {
+        width: 440px;
+    }
 }
+
+
