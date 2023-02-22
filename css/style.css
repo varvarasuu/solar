@@ -610,48 +610,48 @@ input:-webkit-autofill{
     
     /*---------MAIN-----------*/
     .servises {
-        width: 910px;
+        width: 880px;
         padding-top: 30px;
     }
     .services_content {
         gap: 20px;
     }
     .servises_text__paragraph {
-        width: 430px;
+        width: 400px;
     }
     .servises_picture {
-        width: 460px;
+        width: 440px;
     }
 
     .green-tarif {
         padding: 0 0 60px 0;
         height: 900px;
-        width: 910px;
+        width: 880px;
     }
     .green-tarif_content {
         gap: 20px;
     }
     .green-tarif_right_header {
-        width: 440px;
+        width: 420px;
     }
     .green-tarif_right_picture{
-        width: 440px; 
+        width: 420px; 
     }
     .clients {
-        width: 910px;
+        width: 880px;
         padding: 30px 0;
     }
     .clients_content {
         gap: 20px;
     }
     .clients_picture {
-        width: 440px;
+        width: 420px;
     }
     .clients_right_link {
         margin-top: 60px;
     }
     .steps {
-        width: 910px;
+        width: 880px;
     }
     .steps_content {
         flex-direction: column;
@@ -682,6 +682,7 @@ input:-webkit-autofill{
     }
 }
 
+
 /* Адаптив под телефоны*/ 
 @media screen and (max-width: 430px) and (orientation: portrait) {
 
@@ -690,30 +691,42 @@ input:-webkit-autofill{
         height: 100vh;
     }
     .hero_content {
-        width: 400px;
+        margin-top: 25vh;
+        width: 100%;
     }
     .header_description {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 5vw;
+        line-height: 6vw;
     
     }
     
     .header_title {
-        font-size: 34px;
-        line-height: 43px;
+        font-size: 12vw;
+        line-height: 16vw;
         font-variant: small-caps;
     }
+
     
     .header_title span {
-        font-size: 24px;
-        line-height: 33px;
+        font-size: 5vw;
+        line-height: 6vw;
     }
 
+    
+    
+    .header_hero-link{
+        font-size: 5vw;
+        padding: 4vw 6vw;
+        line-height: 7vw;
+
+        margin-top: 25vh;
+    }
 
     /*-------------MAIN-----------*/
     .servises {
         padding: 60px 0;
-        width: 320px;
+        width: 80vw;
+        height: 1000px;
     }
     .servises_content{
         flex-direction: column;
@@ -721,15 +734,15 @@ input:-webkit-autofill{
         gap: 40px;
     }
     .servises_text__paragraph {
-        width: 310px;
+        width: 75vw;
     }
     .servises_picture {
-        width: 310px;
+        display: none;
     }
     .green-tarif {
         padding: 0 0 60px 0;
-        height: 1800px;
-        width: 320px;
+        height: 1710px;
+        width: 75vw;
     }
     .green-tarif_content {
         flex-direction: column;
@@ -739,61 +752,71 @@ input:-webkit-autofill{
     }
     .green-tarif_list {
         padding-bottom: 50px;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
+        gap: 10px;
+    }
+    .pages__title {
+        font-size: 14px;
+        line-height: 19px;
     }
     .green-tarif_price {
         flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
     }
     .discription__right_text_top {
         padding-bottom: 40px;
     }
     .green-tarif_right_header {
-        width: 310px;
+        width: 80vw;
     }
     .green-tarif_right_picture {
-        width: 310px;
-        height: 340px;
+        width: 75vw;
+        height: 80vw;
     }
     .statement {
-        height: 400px ;
+        height: 80vw ;
     }
     .statement_text {
-        /* padding-top: 30px; */
-        font-size: 24px;
-        line-height: 33px;
+        padding-top: 30vw;
+        font-size: 5vw;
+        line-height: 6vw;
     }
 
     .clients {
-        width: 320px;
+        width: 80vw;
         padding: 50px 0;
     }
     .clients_content {
         flex-direction: column;
     }
     .clients_picture {
-        width: 310px;
+        width: 75vw;
+    }
+    .clients_right_text {
+        padding: 0;
     }
     .clients_arrow-left {
-        margin-left: 60px;
+        margin-left: 20vw;
     }
     .clients_right_link {
+        margin: 0 auto;
         margin-top: 60px;
-        width: 180px;
+        font-size: 3vw;
+        padding: 3vw 4vw;
     }
     .steps {
-        width: 320px;
+        width: 80vw;
     }
     .steps_content {
         flex-direction: column;
+        gap: 50px;
     }
     .steps_text {
-        width: 310px;
+        width: 75vw;
     }
     .steps_picture {
-        width: 310px;
-        height: 475px;
+        width: 75vw;
+        height: 90vw;
     }
 
 
@@ -824,85 +847,124 @@ input:-webkit-autofill{
 
         align-items: center;
 
-        width: 400px;
+        width: 100%;
         padding-top: 60px;
 
     }
 }
 
+@media screen and (max-width: 400px) and (orientation: portrait) {
+    .servises {
+        height: 1200px;
+    }
+    .green-tarif {
+        height: 1710px;
+    }
+    .green-tarif_right_header {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .green-tarif_discription__list {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer {
+        height: 1360px;
+    }
+    .footer_content {
+        justify-content: center;
+        align-items: center;
+    }
+    #name, #phone {
+        width: 210px;
+    }
+    .contacts_text {
+        width: 210px;
+    }
+}
 /* Адаптив под телефоны в горизонтальном положении*/ 
 @media screen and (max-width: 932px) and (orientation: landscape) {
 
 
     /*--------------HEADER-----------*/
     .header_hero {
-        height: 430px;
+        height: 100vh;
     }
     .hero_content{
-        margin-top: 60px;
+        margin-top: 15vh;
     }
     .header_description {
-        font-size: 28px;
-        line-height: 35px;
+        font-size: 3vw;
+        line-height: 4vw;
     
     }
     .header_title {
-        font-size: 44px;
-        line-height: 53px;
+        font-size: 5vw;
+        line-height: 6vw;
         font-variant: small-caps;
     }
     .header_title span {
-        font-size: 34px;
-        line-height: 43px;
+        font-size: 4vw;
+        line-height: 4vw;
     }
     .header_hero-link {
-        margin-top: 60px;
+        margin-top: 15vh;
     }
     
     /*---------MAIN-----------*/
     .servises {
-        width: 910px;
+        width: 94vw;
         padding-top: 30px;
     }
     .services_content {
         gap: 20px;
     }
     .servises_text__paragraph {
-        width: 430px;
+        width: 45vw;
     }
     .servises_picture {
-        width: 460px;
+        width: 45vw;
     }
+    
 
     .green-tarif {
         padding: 0 0 60px 0;
         height: 900px;
-        width: 910px;
+        width: 94vw;
+    }
+    .green-tarif_list {
+        padding-bottom: 20px;
     }
     .green-tarif_content {
         gap: 20px;
     }
     .green-tarif_right_header {
-        width: 440px;
+        width: 45vw;
     }
     .green-tarif_right_picture{
-        width: 440px; 
+        width: 45vw; 
     }
+
+    .statement_text {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
     .clients {
-        width: 910px;
+        width: 94vw;
         padding: 30px 0;
     }
     .clients_content {
         gap: 20px;
     }
     .clients_picture {
-        width: 440px;
+        width: 45vw;
     }
     .clients_right_link {
         margin-top: 60px;
     }
     .steps {
-        width: 910px;
+        width: 94vw;
     }
     .steps_content {
         flex-direction: column;
@@ -915,22 +977,59 @@ input:-webkit-autofill{
         width: 100%;
     }
     .footer_content {
+        margin: 0 auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 40px;
         
-        width: 930px;
+        width: 94vw;
     }
     #name, #phone {
         width: 440px;
     }
     .footer_bottom {
-        width: 910px;
+        width: 94vw;
     }
     .contacts_text {
         width: 440px;
     }
 }
 
-
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    .header_hero-link{
+        font-size: 3vw;
+        padding: 3vw 4vw;
+        line-height: 4vw;
+    }
+    .servises {
+        height: 900px;
+    }
+    .servises_picture {
+        display: none; 
+    }
+    .green-tarif {
+        height: 1500px;
+    }
+    .green-tarif_content {
+        flex-direction: column;
+    }
+    .green-tarif_right_header {
+        width: 85vw;
+    }
+    .green-tarif_right_picture {
+        width: 85vw;
+    }
+    .clients_content {
+        flex-direction: column;
+    }
+    .clients_picture {
+        width: 75vw;
+    }
+    .clients_right_text {
+        padding: 0;
+    }
+    .clients_arrow-left {
+        margin-left: 20vw;
+    }
+}
